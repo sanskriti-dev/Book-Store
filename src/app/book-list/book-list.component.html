@@ -1,12 +1,12 @@
-<div style="background: #fff;">
-    <table>
-      <thead>
-      <th>Welcome Novel Library</th>
-      </thead>
-      <tbody>
-      <tr *ngFor="let s of books">
-        <td>{{s.title}}</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+<h2 style="text-align: center" >Welcome Novel Library!!</h2>
+<br><br>
+<div class="container " style="align-content: center">
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly center" >
+  <mat-card  class="card-picture" style="background-color: lightcyan" *ngFor="let book of books">
+    <mat-card-title>
+      <span fxFlex="80%">{{book.title}}</span>
+    </mat-card-title>
+    <img mat-card-image src="../../assets/bookworm.jpg">
+  </mat-card>
+</div>
+</div>

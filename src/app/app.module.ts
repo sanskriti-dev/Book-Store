@@ -9,6 +9,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { OverlayModule } from '@angular/cdk/overlay';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   ],
   imports: [
     BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule,
     FlexLayoutModule,
     BrowserModule,
     HttpClientModule,
